@@ -1,0 +1,111 @@
+/** @format */
+
+* {
+	margin: 0; /* batas luar */
+	padding: 0; /* batas dalam */
+	box-sizing: border-box; /* pembungkus setiap elemen html yang terdiri atas margin, border dan padding */
+	font-family: "Poppins", sans-serif; /* font yang akan digunakan */
+}
+
+.hero {
+	width: 100%; /* untuk mengatur lebar */
+	min-height: 100vh;
+	background-image: url(asset/back-image.png);
+	background-position: center; /* meletakan posisi background */
+	background-size: cover; /* mengatur ukuran background */
+	padding: 10px 10%;
+	overflow: hidden; /*mengontrol apa yang terjadi ketika konten di dalam elemen lebih besar dari area yang tersedia untuk elemen tersebut */
+	position: relative; /* mengontrol bagaimana sebuah elemen ditempatkan di dalam layout dokumen. Properti ini memberikan kemampuan untuk menggeser, menetapkan elemen terhadap elemen lain, atau membuat elemen tetap di posisi tertentu di dalam halaman web */
+}
+
+nav {
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	width: 140px;
+}
+
+nav ul li {
+	display: inline-block;
+	list-style: none;
+	margin: 10px 15px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #333;
+	font-weight: 400;
+}
+
+.login-btn {
+	text-decoration: none;
+	color: #333;
+	margin-right: 15px;
+	font-weight: 400;
+}
+
+.download-btn {
+	display: inline-block;
+	text-decoration: none;
+	padding: 14px 40px;
+	color: #fff;
+	background-image: linear-gradient(45deg, #df4881, #c430d7);
+	font-size: 14px;
+	border-radius: 30px;
+	border-top-right-radius: 0%;
+	transition: 0.5s;
+}
+
+.content {
+	margin-top: 10%;
+	max-width: 600px;
+}
+
+.content h1 {
+	font-size: 70px;
+	color: #222;
+}
+
+.content p {
+	margin: 10px 0 30px;
+	color: #333;
+	animation-delay: 0.5s;
+}
+
+.content .download-btn {
+	padding: 15px 80px;
+	font-size: 15px;
+	animation-delay: 1s;
+}
+
+.download-btn:hover {
+	border-top-right-radius: 30px;
+}
+
+.feature-img {
+	width: 400px;
+	position: absolute;
+	bottom: 0;
+	right: 10%;
+}
+
+.feature-img.anim {
+	animation-delay: 1.5s;
+}
+
+.anim {
+	opacity: 0;
+	transform: translateY(30px);
+	animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup {
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}

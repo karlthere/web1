@@ -1,0 +1,189 @@
+<h1>DISPLAY</h1>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .block-element {
+            display: block;
+            width: 100%;
+            background-color: lightblue;
+            margin-bottom: 10px;
+        }
+
+        .inline-element {
+            display: inline;
+            background-color: lightgreen;
+        }
+
+        .inline-block-element {
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            background-color: lightcoral;
+            margin: 5px;
+        }
+
+        .hidden-element {
+            display: none;
+        }
+
+        .flex-container {
+            display: flex;
+            background-color: lightgray;
+        }
+
+        .flex-item {
+            background-color: lightsalmon;
+            margin: 5px;
+            padding: 10px;
+            width: 100px;
+            text-align: center;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            background-color: lightyellow;
+        }
+
+        .grid-item {
+            background-color: lightpink;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="block-element">Block Element</div>
+    <span class="inline-element">Inline Element 1</span>
+    <span class="inline-element">Inline Element 2</span>
+    <div class="inline-block-element">Inline-Block 1</div>
+    <div class="inline-block-element">Inline-Block 2</div>
+
+    <div class="flex-container">
+        <div class="flex-item">Flex Item 1</div>
+        <div class="flex-item">Flex Item 2</div>
+        <div class="flex-item">Flex Item 3</div>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item">Grid Item 1</div>
+        <div class="grid-item">Grid Item 2</div>
+        <div class="grid-item">Grid Item 3</div>
+        <div class="grid-item">Grid Item 4</div>
+        <div class="grid-item">Grid Item 5</div>
+        <div class="grid-item">Grid Item 6</div>
+    </div>
+</body>
+
+</html>
+
+
+<h1>POSISITION</h1>
+<br><br>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+        }
+
+        .absolute-element {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .fixed-element {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .sticky-element {
+            position: sticky;
+            top: 10px;
+            background-color: green;
+            color: white;
+            text-align: center;
+            line-height: 30px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="absolute-element">Absolute</div>
+        <div class="fixed-element">Fixed</div>
+        <div class="sticky-element">Sticky</div>
+    </div>
+    <p style="margin-top: 1000px;">Scroll down to see the sticky element effect.</p>
+</body>
+
+</html>
+
+
+<h1>BOX SIZING </h1>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 100px;
+            /* Vertically center text */
+        }
+
+        .content-box {
+            padding: 20px;
+            border: 10px solid black;
+            box-sizing: content-box;
+            /* nilai default */
+        }
+
+        .border-box {
+            padding: 20px;
+            border: 10px solid black;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box content-box">Content Box</div>
+    <div class="box border-box">Border Box</div>
+</body>
+
+</html>
